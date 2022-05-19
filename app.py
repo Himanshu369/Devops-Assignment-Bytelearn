@@ -5,4 +5,4 @@ app = Flask(__name__)
 def hello_world():
     return jsonify('hello world')
 
-app.run(debug=True)
+app.run(host="0.0.0.0", port=port)
