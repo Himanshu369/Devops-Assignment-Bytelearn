@@ -1,2 +1,2 @@
 # byteassignment
-Flask Api app with returns an string. 
+Flask Api app which returns an string. 
