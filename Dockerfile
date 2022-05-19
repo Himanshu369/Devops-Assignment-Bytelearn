@@ -1,9 +1,6 @@
 FROM ubuntu
-RUN apt-get update -y
-RUN apt-get install python3.9 -y
-RUN apt-get install python3-pip -y
-RUN pip install flask
-RUN pip install gunicorn
+RUN apt-get update -y && apt-get -y install python3.9 python3-pip 
+RUN pip install flask gunicorn
 WORKDIR /home/myapp/
 COPY . /home/myapp/
 CMD gunicorn app:app --bind 0.0.0.0:$PORT --reload
