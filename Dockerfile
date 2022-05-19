@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install python
+RUN apt-get install python3.9
 RUN pip install flask
 COPY . /home/myapp/
-EXPOSE 80
+EXPOSE 5000
