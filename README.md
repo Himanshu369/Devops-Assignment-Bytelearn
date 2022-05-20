@@ -1,2 +1,2 @@
-# byteassignment
-Flask Api app which returns an string. 
+# bytelearnassignment
+Flask app packaged under a docker images. 
